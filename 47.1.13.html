@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红木嵌银</title><script TYPE="text/javascript"> 	 
+      var docEl = document.documentElement;
+         function setRemUnit () {
+           var rem = docEl.clientWidth / 22.4; // 可根据不同电脑分辨率进行手动修改（如1920*1080 为19.2
+           docEl.style.fontSize = rem + 'px'
+         }
+    
+         setRemUnit()
+    
+         window.addEventListener('resize', setRemUnit)
+         window.addEventListener('pageshow', function (e) {
+           if (e.persisted) {
+             setRemUnit()
+           }
+      })
+    </script>
+    <style>
+      .image{
+        position: relative;  
+        width: 100vw;
+        height: 100vh;
+        background: url(./image/女店铺.jpg)  no-repeat center center;
+        display: block;
+        background-size: 100% 100%;
+        overflow: hidden;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        position: absolute;
+        width: 35vw;
+        height: 70vh;
+        left: 0;
+        bottom: 0;
+        margin-bottom: -4%;
+      }
+      .img{
+      position: absolute;
+      width: 50vw;
+      height: 17vh;
+      left: 61%;
+      top: 79%;
+      transform: translate(-50%,-50%);     
+      border-radius: 10px;
+      background: rgba(225, 225, 225, 0.5);
+      padding: 15px;
+      z-index: 999;
+      }
+      .img3{
+      position: absolute;
+      width: 7vw;
+      height: 5vh;
+      left: 38.5%;
+      top: 64%;
+      transform: translate(-50%,-50%);  
+      border-radius: 5px;
+      background: rgba(225, 225, 225, 0.5);
+      text-align: center;
+      }
+      .word{
+        font-size: 0.35rem;
+      font-family: 楷体;
+      }
+      .word2{
+        font-size: 0.45rem;
+        font-family: 隶书;
+      }
+      a{
+          color: black;
+          text-decoration: none;
+      }
+    </style>
+</head>
+<body>
+    <a href="./47.1.14.html">
+      <div class="image">
+        <div class="img">
+          <div class="word">
+            不光如此，你像这首饰盒，它正面图案称为五福捧寿，寓意多福多寿。这蝙蝠之蝠与福同音，所以用五蝠代表五福，而这五蝠围成一寿字便成了这五福捧寿。
+          </div>
+        </div>
+        <div class="img3">
+            <div class="word2">
+              老板:
+            </div>
+        </div>
+        <img src="./image/人.png" alt="出错啦">
+      </div>
+    </a>
+</body>
+</html>

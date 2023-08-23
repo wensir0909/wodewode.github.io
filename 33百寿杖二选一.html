@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红木嵌银</title>
+    <script TYPE="text/javascript"> 	 
+        var docEl = document.documentElement;
+           function setRemUnit () {
+             var rem = docEl.clientWidth / 22.4; // 可根据不同电脑分辨率进行手动修改（如1920*1080 为19.2
+             docEl.style.fontSize = rem + 'px'
+           }
+      
+           setRemUnit()
+      
+           window.addEventListener('resize', setRemUnit)
+           window.addEventListener('pageshow', function (e) {
+             if (e.persisted) {
+               setRemUnit()
+             }
+        })
+      </script>
+    <style>
+    .image{
+        position: relative;  
+        width: 100vw;
+        height: 100vh;
+        background: url(./image/微信图片_20230807204918.jpg);
+        display: block;
+        background-size: 100% 100%;
+        overflow: hidden;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 28vw;
+        height: 38vh;
+        border-radius: 20px;
+        background: rgba(225, 225, 225, 0.5);
+    }
+    .h3{
+        font-size: 0.30rem;
+        font-family: 楷体;
+        font-weight: bold;
+        color: black;
+        margin: 25px;
+    }
+    .img1{
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%,-50%);
+        width: 20vw;
+        height: 7vh;
+        border-radius: 10px;
+        background: rgba(225, 225, 225, 0.7);
+        display: flex;
+        text-align: justify;
+    }
+    .img2{
+        position: absolute;
+        left: 50%;
+        top: 72%;
+        transform: translate(-50%,-50%);
+        width: 20vw;
+        height: 7vh;
+        border-radius: 10px;
+        background: rgba(225, 225, 225, 0.7);
+        display: flex;
+        text-align: justify;
+    }
+    .word1{
+        margin: auto;
+        font-family: 楷体;
+        font-size: 0.25rem;
+    }
+    .word2{
+        margin: auto;
+        font-family: 楷体;
+        font-size: 0.25rem;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+   <div class="image">
+    <div class="img">
+        <div class="h3">
+            这个名为百寿杖。顾名思义，便是希望长者平平安安、健康长寿。
+        </div>
+            <a href="./33.1.1.html">
+                <div class="img1">
+                    <div class="word1">
+                  可又为何要叫百寿杖？莫非这手杖之上真有一百个寿字？ 
+                    </div>
+                </div>
+            </a>
+        <a href="./33.2.1.html">
+            <div class="img2">
+                <div class="word2">
+                    这寓意好，送给家里老人长辈再好不过了
+                </div>
+            </div>
+        </a> 
+    </div>
+   </div>
+</body>
+</html>

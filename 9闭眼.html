@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script TYPE="text/javascript"> 	 
+      var docEl = document.documentElement;
+         function setRemUnit () {
+           var rem = docEl.clientWidth / 22.4; // 可根据不同电脑分辨率进行手动修改（如1920*1080 为19.2
+           docEl.style.fontSize = rem + 'px'
+         }
+    
+         setRemUnit()
+    
+         window.addEventListener('resize', setRemUnit)
+         window.addEventListener('pageshow', function (e) {
+           if (e.persisted) {
+             setRemUnit()
+           }
+      })
+    </script>
+    <style>
+    .image{
+        position: relative;  
+        width: 100vw;
+        height: 100vh;
+        background: url(./image/女展览馆.jpg)  no-repeat center center;
+        display: block;
+        background-size: 100% 100%;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        position: absolute;
+        width: 70vw;
+        height: 17vh;
+        left: 54%;
+        top: 50%;
+        transform: translate(-50%,-50%);     
+    }
+    .img{
+      position: absolute;
+        width: 60vw;
+        height: 15vh;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%,-50%);     
+        border-radius: 10px;
+        background: rgba(225, 225, 225, 0.5);
+        display: flex;
+        text-align: justify;
+      }
+      .word{
+        font-size: 0.35rem;
+        font-family: 楷体;
+        margin: auto;
+        color: black
+      }
+    </style>
+</head>
+<body>
+    <a href="./10老板话.html">
+      <div class="image">
+       <img src="./image/女闭眼.png" alt="出错啦">
+        <div class="img">
+          <div class="word">
+            <P>你被惊得呆愣在原地，随即画作白光乍现，你被刺得闭上了眼睛</P>
+          </div>
+        </div>
+      </div>
+    </a>
+</body>
+</html>

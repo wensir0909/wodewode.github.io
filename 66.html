@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红木嵌银</title><script TYPE="text/javascript"> 	 
+      var docEl = document.documentElement;
+         function setRemUnit () {
+           var rem = docEl.clientWidth / 22.4; // 可根据不同电脑分辨率进行手动修改（如1920*1080 为19.2
+           docEl.style.fontSize = rem + 'px'
+         }
+    
+         setRemUnit()
+    
+         window.addEventListener('resize', setRemUnit)
+         window.addEventListener('pageshow', function (e) {
+           if (e.persisted) {
+             setRemUnit()
+           }
+      })
+    </script>
+    <style>
+      .image{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        background: url(./image/微信图片_20230807204950.jpg) no-repeat;
+        background-size: 100% 100%;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .img{
+        position: absolute;
+        width: 60vw;
+        height: 15vh;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%,-50%);     
+        border-radius: 10px;
+        background: rgba(225, 225, 225, 0.5);
+        display: flex;
+        text-align: justify;
+      }
+      .word{
+        font-size: 0.35rem;
+        font-family: 楷体;
+        margin: auto;
+        color: black
+      }
+    </style>
+</head>
+<body>
+    <a href="./80最后.html">
+      <div class="image">
+        <div class="img">
+          <div class="word">
+            你轻轻擦去脸上的泪，继续向前走去。
+          </div>
+        </div>
+      </div>
+    </a>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红木嵌银</title><script TYPE="text/javascript"> 	 
+      var docEl = document.documentElement;
+         function setRemUnit () {
+           var rem = docEl.clientWidth / 22.4; // 可根据不同电脑分辨率进行手动修改（如1920*1080 为19.2
+           docEl.style.fontSize = rem + 'px'
+         }
+    
+         setRemUnit()
+    
+         window.addEventListener('resize', setRemUnit)
+         window.addEventListener('pageshow', function (e) {
+           if (e.persisted) {
+             setRemUnit()
+           }
+      })
+    </script>
+    <style>
+      .image{
+        position: relative;  
+        width: 100vw;
+        height: 100vh;
+        background: url(./image/女店铺.jpg)  no-repeat center center;
+        display: block;
+        background-size: 100% 100%;
+        overflow: hidden;
+      }
+      *{
+        margin: 0;
+        padding: 0;
+    }
+      img{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: -2%;
+        bottom: 0;
+      }
+      .img{
+      position: absolute;
+      width: 50vw;
+      height: 17vh;
+      left: 61%;
+      top: 79%;
+      transform: translate(-50%,-50%);    
+      border-radius: 10px;
+      background: rgba(225, 225, 225, 0.5);
+      padding: 15px;
+      z-index: 999;
+      }
+      .img3{
+      position: absolute;
+      width: 4vw;
+      height: 5vh;
+      left: 37%;
+      top: 64%;
+      transform: translate(-50%,-50%);     
+      border-radius: 5px;
+      background: rgba(225, 225, 225, 0.5);
+      text-align: center;
+      }
+      .word{
+        font-size: 0.35rem;
+      font-family: 楷体;
+      }
+      .word2{
+        font-size: 0.45rem;
+        font-family: 隶书;
+      }
+      a{
+          color: black;
+          text-decoration: none;
+      }
+    </style>
+</head>
+<body>
+    <a href="./33.2.3.html">
+      <div class="image">
+        <div class="img">
+          <div class="word">
+            不愧是中华文化，历史深远，博大精深。应当发扬光大，走向世界。
+          </div>
+        </div>
+        <div class="img3">
+            <div class="word2">
+            我:
+            </div>
+        </div>
+        <img src="./image/女主人公 8.14.png" alt="">
+      </div>
+    </a>
+</body>
+</html>

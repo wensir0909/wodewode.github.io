@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红木嵌银</title>
+    <script TYPE="text/javascript"> 	 
+      var docEl = document.documentElement;
+         function setRemUnit () {
+           var rem = docEl.clientWidth / 22.4; // 可根据不同电脑分辨率进行手动修改（如1920*1080 为19.2
+           docEl.style.fontSize = rem + 'px'
+         }
+    
+         setRemUnit()
+    
+         window.addEventListener('resize', setRemUnit)
+         window.addEventListener('pageshow', function (e) {
+           if (e.persisted) {
+             setRemUnit()
+           }
+      })
+    </script>
+    <style>
+    .image{
+      position: relative;  
+      width: 100vw;
+      height: 100vh;
+      background: url(./image/女展览馆.jpg);
+      display: block;
+      background-size: 100% 100%;
+      text-align: center;
+      overflow: hidden;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    img{
+        position: absolute;
+        width: 12.5vw;
+        height: 46vh;
+        left: 27.8%;
+        top: 24.6%;
+        transform: translate(-50%,-50%);
+    }
+    .img{
+        position: absolute;
+        width: 60vw;
+        height: 15vh;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%,-50%);     
+        border-radius: 10px;
+        background: rgba(225, 225, 225, 0.5);
+        display: flex;
+        text-align: center;
+      }
+      .word{
+        font-size: 0.35rem;
+        font-family: 楷体;
+        margin: auto;
+        color: black
+      }
+   
+    </style>
+</head>
+<body>
+    <div class="image">
+        <a href="./4女生展览馆驻足.html">
+          <img src="./image/文创草图8.20.png" alt="">
+        </a>
+      <div class="img">
+        <div class="word">
+          一幅描绘红木嵌银老店的画映入眼帘，吸引着你走向她。
+          <br>
+          （点击画作进入故事）
+        </div>
+      </div>
+    </div>
+</body>
+</html>
